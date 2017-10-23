@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.gustavo.practica01calculadorakotlin.MainActivity"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="73dp">
+
+    <TextView
+        android:id="@+id/operaciones"
+        android:layout_width="293dp"
+        android:layout_height="55dp"
+        android:background="@android:color/darker_gray"
+        android:maxLength="20"
+        android:textAlignment="textEnd"
+        android:textSize="26sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="360dp"
+        android:layout_height="0dp"
+        android:background="@android:color/background_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/operaciones">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/siete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="7"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="8"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/div"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="÷"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/cuatro"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="4"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/cinco"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="5"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/seis"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="6"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/multi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="x"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/uno"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="1"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/dos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="2"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/tres"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/menos"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="-"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/punto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="."
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/cero"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="0"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/igual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="calcular"
+                android:text="="
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/mas"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/background_dark"
+                android:onClick="numero"
+                android:text="+"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/borrar"
+        android:layout_width="67dp"
+        android:layout_height="56dp"
+        android:background="@android:drawable/ic_input_delete"
+        android:onClick="borrar"
+        app:layout_constraintStart_toEndOf="@+id/operaciones"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="151dp"
+        android:layout_height="136dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:background="@android:color/darker_gray"
+        android:text="Hexadecimal"
+        android:checkedButton="@+id/radioButton"
+        android:textColor="#FFFFFF"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/borrar"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="Decimal"
+            android:onClick="activarDecimal"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/borrar"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Binario"
+            android:onClick="activarBinario"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/tableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Hexadecimal"
+            android:onClick="activarHexa"
+            android:textColor="#FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/tableLayout"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="A"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/C"
+        app:layout_constraintEnd_toStartOf="@+id/B" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="B"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/D"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="C"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/E"
+        app:layout_constraintEnd_toStartOf="@+id/D" />
+
+    <Button
+        android:id="@+id/D"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="D"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/F"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/E"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="E"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/F" />
+
+    <Button
+        android:id="@+id/F"
+        android:layout_width="52dp"
+        android:layout_height="54dp"
+        android:layout_marginEnd="32dp"
+        android:layout_weight="1"
+        android:enabled="false"
+        android:background="@android:color/background_dark"
+        android:onClick="numero"
+        android:text="F"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
